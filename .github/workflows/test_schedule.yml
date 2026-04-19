@@ -3,8 +3,8 @@ name: Log Execution Time (JST)
 on:
   schedule:
     # JST 09:00 に実行したい場合 → GitHub Actions は UTC なので 00:00 を指定
-    - cron: "0 0 * * *"
-  workflows:
+    - cron: "0 17 * * *"
+  workflow_dispatch:
 
 jobs:
   write-time:
